@@ -44,7 +44,7 @@ $(document).ready(function() {
     $('.time-block').each(function() { 
       var rightNow = dayjs().hour();
       var blockHour = parseInt($(this).attr('id').split('hour')[1]);
-      // console.log(parseInt($(this).attr('id').split('hour')[1]));
+      console.log(parseInt($(this).attr('id').split('hour')[1]));
 
       if (blockHour < rightNow) {
         $(this).removeClass('present');
